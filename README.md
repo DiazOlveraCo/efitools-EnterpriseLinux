@@ -1,12 +1,10 @@
-# EFI Tools for Enterprise Linux
-
-## Overview
+# Overview
 
 EFI Tools is a collection of applications designed to manage UEFI Secure Boot within Linux environments. It ensures the integrity and security of Linux systems by facilitating UEFI Secure Boot management.
 
 ## Problem Description
 
-The current EFI Tools packages are outdated and incompatible with the latest releases of Enterprise Linux distributions. Users face challenges in efficiently managing UEFI Secure Boot on their systems due to this compatibility issue. Additionally, EFI Tools were not previously packaged for Enterprise Linux, and the available RPM/DEB packages depend on an old OpenSSL version, rendering them incompatible with certain distributions.
+EFI Tools was not packaged for Enterprise Linux. The RPM/DEB packages available depend on an old OpenSSL version, hence they cannot run on newer Enterprise Linux releases.
 
 ## Proposed Solution
 
