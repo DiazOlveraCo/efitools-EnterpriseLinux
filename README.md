@@ -1,21 +1,40 @@
-[![CircleCI](https://circleci.com/gh/freshautomations/efitools-centos/tree/master.svg?style=svg)](https://circleci.com/gh/freshautomations/efitools-centos/tree/master)
-# EFITools for CentOS
+# EFI Tools for Enterprise Linux
 
-## What is EFI Tools?
-EFI Tools is a set of applications to manage UEFI Secure Boot under Linux.
+## Overview
 
-## Problem description
-* EFI Tools was not packaged for CentOS / Red Hat.
-* The RPM/DEB packages available depend on an old OpenSSL version, hence they cannot run on CentOS 7.
+EFI Tools is a collection of applications designed to manage UEFI Secure Boot within Linux environments. It ensures the integrity and security of Linux systems by facilitating UEFI Secure Boot management.
 
-## Proposed solution
-This repository builds EFITools against the latest CentOS release. This keeps EFITools up-to-date and packaged for
-CentOS / RedHat.
+## Problem Description
 
-The build process takes the latest commit on the `master` branch from the kernel Git repos to build the `sbsigntools` and `efitools` packages.
+The current EFI Tools packages are outdated and incompatible with the latest releases of Enterprise Linux distributions. This poses a challenge for users who require efficient management of UEFI Secure Boot on their Enterprise Linux systems.
+
+## Proposed Solution
+
+This repository offers an updated and packaged version of EFI Tools tailored for various Enterprise Linux distributions, including:
+
+- Red Hat Enterprise Linux (RHEL)
+- CentOS
+- Oracle Linux
+- Rocky Linux
+- AlmaLinux
+- Scientific Linux
+- SUSE Linux Enterprise Server (SLES)
+- openSUSE Leap
+
+The build process utilizes the latest development version of the Linux Kernel sourced from the official Git repository to construct the sbsigntools and efitools packages.
+
+## Key Features
+
+- Aligned with the latest Enterprise Linux releases
+- Includes the most recent sbsigntools and efitools packages
+- Simple installation and usage process
 
 ## Todo and ToFix
-* Instead of pulling `master`, the build process should build the latest tagged release. Until this is done, the package
-should not be considered for production use.
-* The RPM binaries should be signed using a GPG key. (This is in the works.)
-* A package repository should be set up.
+
+- Adjust the build process to construct the latest tagged release instead of fetching the development version.
+- Implement GPG key signing for RPM binaries.
+- Establish a package repository.
+
+## About
+
+This repository aims to furnish a convenient and up-to-date package of EFI Tools for Enterprise Linux users. Contributions and feedback are encouraged and appreciated!
