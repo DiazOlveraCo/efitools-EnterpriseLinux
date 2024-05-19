@@ -19,5 +19,3 @@ When you run STemplate, it will render the template using the provided input and
 In the context of efi-tools, STemplate is used to generate configuration files, scripts, or other templates required for the installation process. By leveraging environment variables, files, or strings as input, you can customize the installation process to suit your specific needs.
 
 If you're interested in exploring more about STemplate and its usage in the efi-tools repository, I recommend checking out the STemplate README and the efi-tools README. Both repositories contain valuable information on how to use STemplate for automating installation scripts.
-
-Would you like me to elaborate further on a specific aspect of STemplate or its usage in efi-tools?
