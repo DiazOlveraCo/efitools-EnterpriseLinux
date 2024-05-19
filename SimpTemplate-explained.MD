@@ -5,13 +5,13 @@ From what I can gather, STemplate is primarily used in the efi-tools repository 
 Here's how it works:
 
 
-    STemplate configuration: You provide a template (a Go template) that defines the structure of the output file(s). The template can include placeholders for variables, which will be replaced during the rendering process.
+STemplate configuration: You provide a template (a Go template) that defines the structure of the output file(s). The template can include placeholders for variables, which will be replaced during the rendering process.
 
-    Environment variable injection: STemplate reads environment variables set by the user or existing in the system and injects them into the template as placeholders.
+Environment variable injection: STemplate reads environment variables set by the user or existing in the system and injects them into the template as placeholders.
 
-    File input: You can specify a file that contains additional data structures (e.g., YAML, JSON) to use as input for the template rendering process.
+File input: You can specify a file that contains additional data structures (e.g., YAML, JSON) to use as input for the template rendering process.
 
-    String input: Alternatively, you can provide a string that serves as input for the template rendering process.
+String input: Alternatively, you can provide a string that serves as input for the template rendering process.
 
 
 When you run STemplate, it will render the template using the provided input and output the resulting configuration file(s). This automates the creation of customized installation scripts, making it easier to manage complex installation processes.
